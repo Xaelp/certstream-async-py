@@ -6,8 +6,8 @@ name = "pypi"
 [packages]
 certstream = "==1.12"
 asyncio = "==3.4.3"
-websockets = "==14.2"
 uvloop = "==0.21.0"
+websockets = "==15.0.1"
 
 [dev-packages]
 

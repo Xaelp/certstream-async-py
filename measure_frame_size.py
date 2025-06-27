@@ -1,7 +1,6 @@
 import asyncio
 import websockets
 import logging
-import time
 
 URI = "wss://certstream.calidog.io/"
 
