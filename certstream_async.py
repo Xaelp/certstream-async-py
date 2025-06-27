@@ -4,6 +4,7 @@ import websockets
 import json
 import uvloop
 import logging
+import sys
 
 logger = logging.getLogger()
 asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
@@ -46,7 +47,7 @@ async def connect_to_certstream():
     """
     Connects to the Certstream server and starts the producer.
     """
-    url = "wss://certstream.calidog.io/"
+    url = sys.argv[1]
     while True:
         try:
             print(f"[{datetime.datetime.now()}]: Connecting to Certstream...")
